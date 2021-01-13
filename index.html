@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/art-template/4.13.2/lib/template-web.min.js"></script>
+
+    <style>
+        .uk-article {
+            padding-bottom: 30px;
+            text-decoration: underline;
+        }
+
+        .s-s {
+            box-sizing: border-box;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .s-c {
+            box-sizing: border-box;
+            width: 1200px;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .s-1 {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+
+        .s-3 .uk-card-media-top img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+        }
+
+        .s-4 {
+            background-color: #C0C4CC;
+        }
+
+        .s-5 img {
+            width: 100%;
+            height: 200px;
+            background-color: darksalmon;
+        }
+
+        .s-6 .uk-subnav {
+            justify-content: space-around;
+        }
+
+        .s-6 .uk-subnav-pill>.uk-active>a {
+            background-color: #fff;
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .s-6 .uk-subnav a {
+            font-size: 26px;
+        }
+
+        .s-7 .uk-padding {
+             padding: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="s-1">
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="#">RAONBEAN</a>
+        </div>
+        <div class="uk-navbar-right uk-visible@m">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right uk-hidden@m">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+        </div>
+    </nav>
+</div>
+<div class="s-2">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: push; autoplay: true; autoplay-interval: 3000;">
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="img/demo.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/demo.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/demo.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+</div>
+<div class="s-3">
+    <div class="s-s" uk-toggle="cls: s-c; mode: media; media: @l">
+        <article class="uk-article">
+            <h1 class="uk-text-center uk-article-title">
+                <a class="uk-link-reset" href="">WHY PAONBEM？</a>
+            </h1>
+        </article>
+        <div class="uk-grid-small uk-child-width-1-4@m uk-flex-left uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="s-4">
+    <div class="s-s" uk-toggle="cls: s-c; mode: media; media: @l">
+        <article class="uk-article">
+            <h1 class="uk-text-center uk-article-title">
+                <a class="uk-link-reset" href="">POPULAR BEAN</a>
+            </h1>
+        </article>
+        <div class="uk-grid-small uk-child-width-1-4@m uk-flex-left uk-text-left" uk-grid>
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="img/demo.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="s-5">
+    <a href="">
+        <img src="">
+    </a>
+</div>
+<div class="s-6">
+    <div class="s-s" uk-toggle="cls: s-c; mode: media; media: @l">
+        <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+            <li><a href="#">SINGLE ORIGIN</a></li>
+            <li><a href="#">BLENDS</a></li>
+            <li><a href="#">FLAVORED</a></li>
+            <li><a href="#">SPECIALTY</a></li>
+        </ul>
+
+        <ul class="uk-switcher uk-margin">
+            <li><div class="uk-grid-small uk-child-width-1-4@m uk-flex-left uk-text-left" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+            <li><div class="uk-grid-small uk-child-width-1-4@m uk-flex-left uk-text-left" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+            <li><div class="uk-grid-small uk-child-width-1-4@m uk-flex-left uk-text-left" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+            <li><div class="uk-grid-small uk-child-width-1-4@m uk-flex-left uk-text-left" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="uk-card uk-card-hover">
+                        <div class="uk-card-media-top">
+                            <img src="img/demo.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+        </ul>
+    </div>
+</div>
+<div class="s-7">
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid>
+        <div>
+            <div class="uk-padding">
+                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="img/photo.jpg" uk-img>
+                    <h1>RECIPE DUTCH</h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-padding uk-light">
+                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="img/photo.jpg" uk-img>
+                    <div>
+                        <h1>HAND DRIP</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // let data = {
+    //     city: ['江苏', '上海', '北京', '成都', '深圳', '杭州']
+    // };
+    // $('#demo').html(template('temp', data))
+</script>
+</body>
+</html>
