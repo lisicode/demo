@@ -1,4 +1,5 @@
 const http = require('http');
+const querystring = require('querystring');
 
 http.createServer(function (req, res) {
     res.writeHeader(200, {
@@ -7,7 +8,8 @@ http.createServer(function (req, res) {
 
 
     req.on('data', function (data) {
-
+        var str = data.toString();
+        console.log(querystring.parse(str).demo)
 
         req.on('end', function () {
             let sendData = {
